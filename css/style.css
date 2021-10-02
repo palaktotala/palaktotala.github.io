@@ -276,7 +276,7 @@ header {
 /*Education*/
 .education {
     background-color: var(--clr-dark);
-    background-image: url("C:/Users/Palak Totala/Desktop/portfolio/wall.jpg");
+    background-image: url("wall.jpg");
     background-size:cover;
     color:var(--clr-light);
     text-align: center;
