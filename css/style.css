@@ -63,6 +63,13 @@ strong  { font-weight: var(--fw-bold);}
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+mark{
+    background-color: var(--clr-accent);
+    margin:0 0.7em;
+    padding:0 0.3em;
+}
+
 /* Buttons */
 
 .btn {
@@ -264,6 +271,7 @@ header {
         z-index: 2;
     }
     .section__subtitle--intro {
+        grid-area : title;
         align-self: start;
         grid-column: -1/1;
         grid-row: 2;
@@ -271,6 +279,8 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        padding-right: 2em;
+        padding-left: calc(200px + 2em);
     }
 }
 /*Education*/
@@ -283,7 +293,7 @@ header {
 }
 
 .section__title--educations {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     position: relative;
 }
 /*
