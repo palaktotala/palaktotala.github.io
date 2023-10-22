@@ -277,7 +277,7 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -1.5em;
+        left: -1.5 em;
         width: calc(100% + 1.5em);
         padding-right: 2em;
         padding-left: calc(200px + 2em);
@@ -373,17 +373,51 @@ header {
     }
 }
 
+/*Experience*/
+.experience {
+    background-color: var(--clr-dark);
+    background-size:cover;
+    color:var(--clr-light);
+    text-align: center;
+}
+
+.section__title--experience {
+    color: var(--clr-light);
+    position: relative;
+}
+
+.experiences {
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+.exp {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .experiences {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .exp + .exp {
+        margin-left: 2em;
+    }
+}
+
 /*My Project*/
 
 .my-projects {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 50px;
 }
 .portfolio__item {
